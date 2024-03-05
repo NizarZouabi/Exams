@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>users dashboard</title>
+</head>
+<body class="bg-light">
+    <div class="m-3">
+        <div class="m-3 d-flex justify-content-between">
+        <h1>PyPie Derby</h1>
+        <div class="d-flex gap-3">
+            <a class="m-2 btn btn-lg btn-secondary" href="/dashboard">Dashboard</a>
+            <form action="/logout" method="post"><button class="m-2 btn btn-lg btn-danger">Logout</button></form>
+        </div>
+        </div>
+        <div class="container d-flex flex-column">
+            <table class="m-3 table table-striped border">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>PyPie By</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if pies %}
+                    {% for pie in pies %}
+                    <tr>
+                        <td><a href="/view/{{pie.id}}">{{pie.name}}</a></td>
+                        <td>{{pie.owner.first_name}}</td>
+                        <td>{{pie.votes | length}}</td>
+                    </tr>
+                    {% endfor %}
+                    {% else %}
+                    <tr>
+                        <td colspan="3">No pies Available.</td>
+                    </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
