@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+header {
+    width: 100%;
+}
+
+.Topsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 5px 10px 5px;
+    border-bottom: 3px solid black;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Logo {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#Search-bar {
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 80px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px 15px;
+    width: 67.5%;
+}
+
+#srchicon {
+    position:absolute;
+    left: 74%;
+    bottom: 94.8%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#signbtn {
+    background: transparent;
+    border: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#signbtn:hover {
+    color: rgb(0, 207, 179);
+}
+
+#cartbtn {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 7px;
+}
+
+.nav-bar a {
+    display: flex;
+    flex-direction: row;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: rgb(0, 207, 179);
+    font-size: larger;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.Mainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mainsection h1 {
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+}
+
+#textt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 380px;
+    padding: 25px;
+    font-size: 48px;
+    font-family: sans-serif;
+    gap: 20px;
+    background-color:rgb(0, 207, 179);
+    color: white;
+}
+
+#textt h4:hover {
+    text-decoration: underline;
+    font-size: 52px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#succulents {
+    width: 420px;
+    height: 400px;
+}
+
+.columnbox {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    gap: 20px;
+}
+
+#img {
+    display: flex;
+    height: 70%;
+}
+
+#txt {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: 23px;
+    background-color:rgb(0, 207, 179);
+    color: white;
+    height: 25%;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+#txt:hover {
+    text-decoration: underline;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.btm-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(140, 255, 240);
+    width: 100%;
+    height: 250px;
+    padding: 40px 0 50px 0;
+    margin-bottom: 50px;
+}
+
+.btm-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.btm-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btm-box div:hover {
+    color: rgb(0, 207, 179);
+    transition: 0.2s;
+}
+
+.cookies-popup {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 140px;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 65.2%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.cookies-popup img {
+    width: 80px;
+    height: 80px;
+}
+
+.cookies-popup p {
+    font-size: 20px;
+}
+
+.cookies-popup button {
+    border: 1px solid black;
+    background-color: rgb(0, 207, 179);
+    color: white;
+    width: 120px;
+    height: 40px;
+    box-shadow: 1px 2px 4px black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
